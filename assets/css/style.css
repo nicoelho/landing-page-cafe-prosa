@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --marrom: #75442A;
+    --marrom-claro: #C8A37B;
+    --marrom-escuro: #322015;
+    --cinza: #d4d7d7;
+    --marrom-marrom: #a26f45;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 12vh;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+}
+
+/*      CABECALHO      */
+
+.cabecalho{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--marrom-marrom);
+    height: 12vh;
+    position: fixed;
+    width: 100%;
+}
+
+.cabecalho__img{
+    width: 100px;
+}
+
+.cabecalho__lista--item{
+    font-family: "Pacifico", cursive;
+    font-size: 22px;
+}
+
+.cabecalho__item--link:hover{
+    text-decoration: underline;
+}
+
+
+
+/*       HISTÓRIA        */
+
+.conteudo__historia{
+    background-image: url(../imagens/cafeteria-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 12vh;
+}
+
+.conteudo__historia--txt{
+    color: white;
+    text-align: center;
+    width: 750px;
+    margin: 0 auto;
+    background-color: var(--marrom-escuro);
+    padding: 10px;
+}
+
+
+
+
+/*        PILARES      */
+
+.conteudo__pilares{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.conteudo__pilares--caixa{
+    width: 350px;
+    padding: 0 150px;
+}
+
+.conteudo__pilares--caixa:nth-child(3){
+    border: none;
+}
+
+.conteudo__pilares--titulo{
+    font-size: 21px;
+}
+
+.conteudo__pilares--txt{
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.conteudo__pilares--item{
+    margin-top: 15px;
+    font-size: 17px;
+}
+
+.conteudo__pilares--item:first-child{
+    margin-top: 10px;
+}
+
+.conteudo__pilares--item::before{
+    content: "- ";
+}
+
+/*         CAFÉ      */
+
+.conteudo__cafe--img{
+    height: 400px;
+}
+
+.conteudo__cafe{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--marrom-claro);
+}
+
+.conteudo__cafe--titulo{
+    font-size: 21px;
+}
+
+.conteudo__cafe__titulop{
+    text-align: center;
+    margin: 10px 0;
+    font-size: 21px;
+}
+
+.conteudo__cafe--listagraos, .conteudo__cafe--listamoagem{
+    padding: 10px 0;
+    
+}
+
+.conteudo__cafe__itensgraos ,.conteudo__cafe__itensmoagem{
+    padding: 5px 0;
+    font-size: 18px;
+}
+
+.conteudo__cafe__itensgraos::before ,.conteudo__cafe__itensmoagem::before{
+    content: "- ";
+}
+
+/*        PRODUTOS         */
+
+.conteudo__produtos--titulo{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 21px;
+}
+
+.conteudo__produtos--cubo{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 20px 0;
+
+    text-align: center;
+}
+
+.conteudo__produtos--img{
+    height: 200px;
+    width: 180px;
+    border-radius: 5px;
+}
+
+.conteudo__cubos--titulo{
+    margin-top: 5px;
+    font-size: 21px;
+}
+
+.conteudo__produtos--item{
+    text-align: initial;
+    margin: 15px 0;
+    border: 1px solid var(--marrom-claro);
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+
+/*    PRODUTOS --- CUBOS         */
+
+.conteudo__produtos--cubos{
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 1px 2px 10px 5px rgba(50,32,21,0.75);
+    border-radius: 10px;
+    width: 280px;
+}
+
+
+
+/*          RODAPE          */
+
+.rodape{
+    background-color: var(--marrom-escuro);
+    padding: 25px;
+}
+
+.rodape__container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*  RODAPE -- FORM  -- MAPA    */
+
+.rodape__form--container, .rodape__mapa{
+    background-color: white;
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.rodape__form--titulo, .rodape__mapa--titulo{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 19px;
+}
+
+.rodape__form--etiqueta{
+    display: block;
+}
+
+.rodape__form--caixa{
+    border: 1px solid var(--marrom-escuro);
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.rodape__form--caixatxt{
+    width: 194px;
+    height: 170px;
+    border: 1px solid var(--marrom-escuro);
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.rodape__form--btn{
+    display: block;
+    border: 1px solid var(--marrom-escuro);
+    border-radius: 3px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: var(--marrom-escuro);
+    color: white;
+    margin: 5px 0;
+    width: 40%;
+}
+
+.rodape__form--btn:hover{
+    background-color: var(--marrom);
+    transition: 0.3s;
+}
+
+
+
+
+
+/*  RODAPE -- INFOS    */
+
+.rodape__infos--img{
+    width: 100px;
+}
+
+.rodape__infos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rodape__infos--txt{
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.rodape__infos--lista{
+    display: flex;
+}
+
+.rodape__lista--itens{
+    padding: 4px;
+    transition: transform 0.3s;
+}
+
+.rodape__lista--itens:hover {
+    transform: scale(1.35); /* Aumenta o tamanho sem afetar os cubos ao lado */
+    transition: transform 0.3s; /* Transição suave */
+}
+
+ion-icon {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+  }
+
+.negrito{
+    font-weight: bold;
+}
